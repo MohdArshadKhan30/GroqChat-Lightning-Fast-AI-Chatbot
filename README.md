@@ -4,6 +4,12 @@
 
 ---
 
+## 🌐 Live Demo
+ 
+👉 **[Try it here](https://groqchat-lightning-fast-ai-chatbot.streamlit.app/)** — no setup needed, runs in your browser.
+ 
+---
+
 ## 💡 Suggested Project Names
 
 | Name | Why it fits |
