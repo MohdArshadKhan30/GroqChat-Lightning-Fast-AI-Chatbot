@@ -9,7 +9,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 # LangSmith setup for tracing
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_API_KEY"] = st.secrets["LANGCHAIN_API_KEY"]
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "GroqChat — Lightning-Fast AI Chatbot"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
@@ -38,7 +38,7 @@ prompt = ChatPromptTemplate.from_messages([
 @st.cache_resource
 def load_llm():
     return ChatGroq(
-        groq_api_key=GROQ_API_KEY,
+        groq_api_key=st.secrets["GROQ_API_KEY"],
         model_name="openai/gpt-oss-120b",
         temperature=0.3
     )
