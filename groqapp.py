@@ -11,7 +11,7 @@ load_dotenv()
 # LangSmith setup for tracing
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+os.environ["LANGCHAIN_PROJECT"] = "GroqChat — Lightning-Fast AI Chatbot"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
